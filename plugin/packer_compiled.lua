@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/Users/sebastian/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
+  ["flutter-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/sebastian/.local/share/nvim/site/pack/packer/start/flutter-tools.nvim",
+    url = "https://github.com/akinsho/flutter-tools.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/sebastian/.local/share/nvim/site/pack/packer/start/friendly-snippets",

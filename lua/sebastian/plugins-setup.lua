@@ -32,6 +32,9 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
+	-- dart
+	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
+
 	-- colorscheme
 	use("Mofiqul/dracula.nvim")
 
