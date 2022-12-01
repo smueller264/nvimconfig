@@ -1,3 +1,5 @@
+local M = {}
+
 -- import lspconfig plugin safely
 local lspconfig_status, lspconfig = pcall(require, "lspconfig")
 if not lspconfig_status then
@@ -62,6 +64,14 @@ lspconfig["html"].setup({
 	on_attach = on_attach,
 })
 
+-- configure typescript server with plugin
+typescript.setup({
+	server = {
+		capabilities = capabilities,
+		on_attach = on_attach,
+	},
+})
+
 -- configure css server
 lspconfig["cssls"].setup({
 	capabilities = capabilities,
@@ -107,3 +117,7 @@ lspconfig["sumneko_lua"].setup({
 		},
 	},
 })
+
+M.on_attach = on_attach
+
+return M

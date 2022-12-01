@@ -32,9 +32,6 @@ return packer.startup(function(use)
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-	-- dart
-	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
-
 	-- colorscheme
 	use("Mofiqul/dracula.nvim")
 
@@ -104,6 +101,9 @@ return packer.startup(function(use)
 
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+
+	-- dart
+	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
 
 	if packer_bootstrap then
 		require("packer").sync()

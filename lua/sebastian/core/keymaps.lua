@@ -39,4 +39,8 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string u
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
-
+-- flutter
+keymap.set("n", "<leader>ds", "<cmd>FlutterRun <cr>")
+keymap.set("n", "<leader>do", "<cmd>FlutterOutlineToggle <cr>")
+keymap.set("n", "<leader>dr", "<cmd>FlutterReload <cr>")
+keymap.set("n", "<leader>dt", "<cmd>FlutterQuit <cr>")
