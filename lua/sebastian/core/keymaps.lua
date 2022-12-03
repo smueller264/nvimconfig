@@ -3,6 +3,8 @@ vim.g.mapleader = " "
 local keymap = vim.keymap -- for conciseness
 
 -- general keymaps
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
