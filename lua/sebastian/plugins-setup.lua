@@ -105,6 +105,9 @@ return packer.startup(function(use)
 	-- dart
 	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
 
+	-- Code Diagnostics Window
+	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
