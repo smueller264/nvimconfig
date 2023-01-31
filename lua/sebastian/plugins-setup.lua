@@ -108,6 +108,15 @@ return packer.startup(function(use)
 	-- Code Diagnostics Window
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
+	-- Markdown Preview
+	-- install without yarn or npm
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
