@@ -108,6 +108,8 @@ return packer.startup(function(use)
 	-- Code Diagnostics Window
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
+	--go
+	use("ray-x/go.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
